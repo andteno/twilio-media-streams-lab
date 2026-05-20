@@ -7,11 +7,6 @@
 ## Context & Summary
 This repository provides a local testing environment to evaluate Twilio Media Streams. It represents a simplified phase of a larger AI-to-AI communication architecture. By redirecting the destination routing to a standard personal phone number, a human can manually receive the call and audit the output from the agent in real-time. 
 
-## Objectives
-* **Audio Validation:** Verifies the integrity of the PSTN bridge and audio fidelity while avoiding the complexity of managing concurrent AI sessions.
-* **Protocol Logging:** Functions as a robust Protocol Logger. The application captures precise timestamps and payload dimensions for inbound media, as well as formal confirmation of successful packet transmission to the Twilio gateway.
-* **Scripted Agent Simulation:** Operates without a live LLM integration by transmitting pre-recorded mu-law audio packets (e.g., a static greeting loop).
-
 ---
 
 ## How to Run This Code
@@ -54,7 +49,7 @@ Once your phone rings, answer it. You will hear the pre-recorded greeting, and t
 
 ---
 
-## 🏗️ Architecture Diagram
+## Architecture Diagram
 
 ```mermaid
 sequenceDiagram
