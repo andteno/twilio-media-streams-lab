@@ -13,13 +13,12 @@ async function startLabCall() {
       record: true,
       // 3. The Inline TwiML pointing to your local ngrok server
       twiml: `
-<Response>
-<Connect>
-<Stream url="wss://turmoil-unfixed-garlic.ngrok-free.dev/media"
-/>
-</Connect>
-</Response>
-`
+        <Response>
+          <Connect>
+            <Stream url="wss://xxx.dev/media"/>
+          </Connect>
+        </Response>
+      `
     });
     console.log(`Call triggered successfully! Call SID:
 ${call.sid}`);
